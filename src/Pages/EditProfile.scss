@@ -1,0 +1,98 @@
+.edit-profile {
+  padding: 2rem;
+  width:70%; 
+  height: 79vh;
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .profile-pic-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px dashed pink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .camera-icon {
+        font-size: 1.5rem;
+        color: rgba(17, 94, 40, 1);
+      }
+    }
+  }
+
+  .edit-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .form-group {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 16px;
+        margin-bottom: 0.7rem;
+      }
+
+      .input-wrapper {
+        position: relative;
+
+        .input-icon {
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: rgba(17, 94, 40, 1);
+        }
+
+        input {
+          width: 100%;
+          padding: 1rem 1rem 1rem 3rem;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 0.95rem;
+        }
+      }
+    }
+
+    .full-width {
+      flex: 1 1 100%;
+    }
+
+    .form-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+
+      .cancel-btn,
+      .save-btn {
+        padding: 0.5rem 1.5rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: none;
+      }
+
+      .cancel-btn {
+        background-color: transparent;
+        border: 1px solid rgba(17, 94, 40, 1);
+        color: rgba(17, 94, 40, 1);
+      }
+
+      .save-btn {
+        background-color: rgba(17, 94, 40, 1);
+        color: white;
+      }
+    }
+  }
+}

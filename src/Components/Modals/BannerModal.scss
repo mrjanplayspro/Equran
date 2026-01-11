@@ -1,0 +1,92 @@
+.form-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  .form-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 650px;
+    max-width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .form-row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        label {
+          flex: 0 0 120px;
+          font-weight: 600;
+        }
+
+        input {
+          flex: 1;
+          padding: 0.5rem;
+          border: 1px solid #ccc;
+          border-radius: 0.4rem;
+        }
+
+        .upload-box {
+          width: 80px;
+          height: 80px;
+          border: 2px dashed #ccc;
+          border-radius: 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+          color: green;
+          cursor: pointer;
+        }
+      }
+
+      .form-submit {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+
+        button {
+          background-color: #0b5c26;
+          color: #fff;
+          padding: 0.7rem 1.5rem;
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 1rem;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #094b1f;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+
+body {
+    background-color: rgba(245, 246, 250, 1);
+}
+
+.link2 {
+  text-decoration: none;
+  color: white;
+}
+
+.order-page {
+   
+
+  .filter-section {
+    margin-bottom: 1.5rem;
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 16px;
+    }
+
+    .select-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     background-color: white;
+      padding: 1rem 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+
+      span {
+           font-size: 18px;
+    font-weight: 500;
+
+      }
+
+      i {
+        font-size: 18px;
+        color: #444;
+      }
+    }
+  }
+
+  .order-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        border: 1px solid #c6fcd5;
+        background: #c6fcd5;
+        border-top-left-radius: 15px !important;
+
+        th {
+          text-align: left;
+          padding: 0.75rem;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid #eee;
+
+          td {
+            padding: 0.75rem;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(109, 119, 122, 1);
+          }
+
+          .actions {
+            display: flex;
+            gap: 0.5rem;
+
+            .view-btn {
+              background: rgba(17, 94, 40, 1);
+              border: none;
+              padding: 0.4rem 0.6rem;
+              color: white;
+              border-radius: 5px;
+              font-size: 14px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+            }
+
+            .chat-btn {
+              background: rgba(17, 94, 40, 1);
+              border: none;
+              color: white;
+           padding:6.4px 1.5rem;
+
+              border-radius: 5px;
+              font-size: 14px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 0;
+
+      button {
+        background: #f1f1f1;
+        border: none;
+        padding: 0.5rem 0.75rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+
+        &.active {
+          background: #14532d;
+          color: white;
+        }
+      }
+
+      span {
+        font-size: 14px;
+        color: #888;
+      }
+    }
+  }
+}

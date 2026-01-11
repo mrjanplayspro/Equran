@@ -1,0 +1,174 @@
+.order-details-page {
+  padding: 2rem;
+  background: #f7f8fa;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .items-card {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        background-color: #c6fcd5;
+
+        th {
+          padding: 0.75rem;
+          text-align: left;
+          font-size: 14px;
+        }
+      }
+
+      tbody tr {
+        border-bottom: 1px solid #eee;
+
+        td {
+          padding: 0.75rem;
+          font-size: 14px;
+          color: #444;
+        }
+      }
+    }
+
+    .totals {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        color: #333;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .bottom-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .user-card,
+    .description-card {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .subheading {
+      font-weight: 600;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .profile-pic {
+        background-color: #d4fbe0;
+        border-radius: 50%;
+        padding: 0.8rem;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 50%;
+        }
+      }
+
+      .info p {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+        justify-content: space-between;
+
+        strong {
+          font-weight: 500;
+          color: #333;
+        }
+
+        span {
+          font-size: 14px;
+          color: #777;
+        }
+      }
+    }
+
+    .description-card p {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+
+      strong {
+        font-weight: 500;
+      }
+
+      span {
+        color: #555;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+
+.user-card{
+
+  .main {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+.one p {
+    font-size: 16px;
+  line-height: 18.46px;
+  font-weight: 600;
+}
+  }
+
+  .user-info p  {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 6px;
+
+span {
+  color: rgba(47, 47, 45, 0.5);
+  font-size: 16px;
+  line-height: 18.46px;
+  font-weight: 600;
+}
+
+strong {
+  font-size: 16px;
+  line-height: 18.46px;
+  font-weight: 600;
+}
+  }
+}

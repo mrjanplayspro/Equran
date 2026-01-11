@@ -1,0 +1,154 @@
+.products-page {
+     padding: 2rem 2rem 0rem 2rem;
+     height: 79vh;
+
+    
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin-bottom: 2rem;
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .add-btn {
+      background-color: #065f46;
+      color: white;
+      border: none;
+      padding: 0.5rem 1.2rem;
+      border-radius: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+
+ .search-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+
+  input {
+    width: 100%;
+    padding: 10px 12px 10px 40px; // left padding to make space for the icon
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+
+    &:focus {
+      border-color: #0b572e;
+      outline: none;
+    }
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    pointer-events: none; // allows clicking through to input
+  }
+}
+
+    }
+  }
+
+.role-table {
+  padding: 1rem;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+
+    thead {
+
+      th {
+        color: rgba(128, 148, 174, 1);
+        text-align: left;
+        padding: 1rem;
+        font-weight: 600;
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #e0e0e0;
+
+        &:hover {
+          background-color: #f4f6f8;
+        }
+
+        td {
+          padding: 0.5rem;
+          color: #333;
+
+          input[type="checkbox"] {
+            transform: scale(1.2);
+          }
+
+          .actions {
+            display: flex;
+            gap: 0.5rem;
+
+            button {
+              border: none;
+              background-color: #0b5c26;
+              color: white;
+              padding: 0.5rem;
+              border-radius: 50%;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: background-color 0.3s ease;
+
+              &:hover {
+                background-color: #094b1f;
+              }
+
+              svg {
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+  .pagination {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    button {
+      padding: 0.4rem 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: white;
+      cursor: pointer;
+
+      &.active {
+        background-color: #065f46;
+        color: white;
+        border: none;
+      }
+    }
+  }
+

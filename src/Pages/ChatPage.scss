@@ -1,0 +1,441 @@
+.chat-container {
+  display: flex;
+  height: 87vh;
+}
+
+.sidebar {
+  width: 280px;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .avatar {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+
+    .settings {
+          display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 18px;
+
+    }
+  }
+
+  .search {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+.recent-chats {
+  h4 {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  .user-bubble {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+
+    .status-dot {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 12px;
+      height: 12px;
+      background: rgba(17, 94, 40, 1);
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+
+  }
+  
+
+      .user-bubble {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: #e4e4e4;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+               font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+
+            .status-dot {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 12px;
+      height: 12px;
+      background: rgba(17, 94, 40, 1);
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+
+      }
+      .user-bubblee {
+            position: relative;
+        width: 40px;
+        height: 40px;
+        background: rgba(157, 114, 255, 1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+
+            .status-dot {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 12px;
+      height: 12px;
+      background:rgba(17, 94, 40, 1);
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+
+      }
+      .user-bubbleew {
+            position: relative;
+        width: 40px;
+        height: 40px;
+        background:  rgba(255, 99, 165, 1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+              font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+
+            .status-dot {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 12px;
+      height: 12px;
+      background: rgba(17, 94, 40, 1);
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+      
+      }
+      .user-bubbleee {
+            position: relative;
+        width: 40px;
+        height: 40px;
+        background:rgba(17, 94, 40, 1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+
+            .status-dot {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 12px;
+      height: 12px;
+      background:rgba(17, 94, 40, 1);
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+  
+
+      }
+      .user-bubbleeee {
+        width: 40px;
+        height: 40px;
+        background:rgba(9, 194, 222, 1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+            .status-dot {
+      content: ''; 
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 8px;
+      height: 8px;
+      background: rgba(17, 94, 40, 1);
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+      }
+
+      .kl {
+          display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+      }
+
+      .di {
+       display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+      }
+    }
+
+    
+  
+
+
+  .messages {
+  h4 {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .message-row {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    gap: 0.75rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.2s;
+
+
+    .avatar-wrapper {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 14px;
+
+      &.initials {
+        background: #ccc;
+      }
+
+        &.pink {
+          background: #f06292;
+        }
+
+        &.yellow {
+          background: #fbc02d;
+        }
+      }
+
+        .message-info {
+
+          .name {
+            font-size: 15px;
+            color: rgba(82, 100, 132, 1);
+            line-height: 24.75px;
+            font-weight: 500;
+          }
+
+          .text{
+            font-size: 13px;
+            color: rgba(128, 148, 174, 1);
+            line-height: 24.75px;
+            font-weight: 500;
+            
+  white-space: nowrap;      
+  overflow: hidden;            
+  text-overflow: ellipsis; 
+    max-width: 200px;            
+          }
+        }
+
+    }
+  }
+
+
+.chat-window {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  .chat-header {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+
+    .user-info {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: rgba(17, 94, 40, 1);
+        font-weight: bold;
+      }
+    }
+  }
+
+.chat-body {
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .left-msg {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    .avatar-bubble {
+      width: 28px;
+      height: 28px;
+      background:rgba(17, 94, 40, 1);
+      color: white;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left {
+      background: #f1f1f1;
+      padding: 0.6rem 1rem;
+      border-radius: 1rem;
+      max-width: 60%;
+    }
+  }
+
+  .right {
+    align-self: flex-end;
+    background: rgba(17, 94, 40, 1);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+    max-width: 60%;
+  }
+}
+.chat-input-container {
+  padding: 0.75rem;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+
+  .chat-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 999px;
+    padding: 1rem 1rem;
+
+    input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      padding: 0 2.5rem 0 2rem;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .left-icon {
+      position: absolute;
+      left: 1rem;
+      color: #666;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        color: #28a745;
+      }
+    }
+
+    .right-icons {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      position: absolute;
+      right: 1rem;
+
+      i {
+        color: #666;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+          color: #28a745;
+        }
+      }
+
+      .send-icon {
+        background: #28a745;
+        color: #fff;
+        padding: 0.4rem;
+        border-radius: 50%;
+        font-size: 14px;
+
+        &:hover {
+          background: #218838;
+        }
+      }
+    }
+  }
+}
+
+
+}

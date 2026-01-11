@@ -1,0 +1,164 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+
+  h2 {
+    margin: 0;
+  }
+
+  .controls {
+    display: flex;
+    gap: 0.8rem;
+
+    input, select {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .add-btn {
+      background-color: #0f9d58;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+}
+
+.students-wrapper {
+margin-top: 1rem;
+margin-bottom: 1rem;
+background-color: white;
+}
+
+
+.search-wrapper {
+  position: relative;
+
+  input {
+    padding: 0.5rem 2rem 0.5rem 2.5rem; // left padding for icon
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 200px;
+  }
+
+  .search-icon {
+    position: absolute;
+      left: 173px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #888;
+  }
+}
+
+.Link1 {
+text-decoration: none !important;
+}
+
+
+
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+
+  th {
+    padding: 0.8rem;
+    border-bottom: 1px solid #f1f1f1;
+    text-align: left;
+    line-height: 21.45px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(128, 148, 174, 1) !important;
+  }
+
+ td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #f1f1f1;
+    text-align: left;
+  }
+
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    .avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .name {
+      font-weight: 600;
+    }
+
+    .email {
+      font-size: 0.8rem;
+      color: #888;
+    }
+  }
+
+  .view-more {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(9, 194, 222, 1);
+    cursor: pointer;
+  }
+
+  .badge {
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    &.paid {  color: #0f9d58; }
+    &.due {  color: #eab308; }
+    &.cancelled { color: #dc2626; }
+  }
+
+  .status {
+    font-weight: 600;
+    font-size: 0.8rem;
+    &.active { color: #0f9d58; }
+    &.inactive { color: #f97316; }
+    &.suspend { color: #dc2626; }
+  }
+
+  .grey {
+    color: rgba(128, 148, 174, 1) !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.1px;
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+
+  button {
+    padding: 0.4rem 0.75rem;
+    border: none;
+    background: #f3f4f6;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.active {
+      background: #14532d;
+      color: white;
+    }
+  }
+}

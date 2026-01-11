@@ -1,0 +1,129 @@
+.products-page {
+     padding: 2rem 2rem 0rem 2rem;
+     height: 79vh;
+
+    
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin-bottom: 2rem;
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .add-btn {
+      background-color: #065f46;
+      color: white;
+      border: none;
+      padding: 0.5rem 1.2rem;
+      border-radius: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+
+ .search-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+
+  input {
+    width: 100%;
+    padding: 10px 12px 10px 40px; // left padding to make space for the icon
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+
+    &:focus {
+      border-color: #0b572e;
+      outline: none;
+    }
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    pointer-events: none; // allows clicking through to input
+  }
+}
+
+    }
+  }
+
+  .products-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 1.3rem 0.5rem;
+      text-align: left !important;
+      border-bottom: 1px solid rgba(219, 223, 234, 0.9);
+      vertical-align: middle;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: start !important;
+
+      button {
+        border: none;
+        background-color: #065f46;
+        color: white;
+        padding: 0.7rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &.delete {
+          background-color: #065f46;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    button {
+      padding: 0.4rem 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: white;
+      cursor: pointer;
+
+      &.active {
+        background-color: #065f46;
+        color: white;
+        border: none;
+      }
+    }
+  }
+

@@ -1,0 +1,32 @@
+.terms-container {
+padding: 1.3rem;
+    max-width: 1300px;
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #333;
+    margin-bottom: 1rem;
+
+    &:hover {
+      color: #111;
+    }
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .terms-text {
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #666;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
